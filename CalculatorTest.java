@@ -1,5 +1,7 @@
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -29,6 +31,15 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
     double result = calculator.divide(20.0, 10.0);
     assertEquals(2.0, result, 0.001); // Tolerance for floating-point comparison
+    }
+
+     @Test
+    public void testDivideByZero() {
+        Calculator calculator = new Calculator();
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calculator.divide(10, 0);
+        });
+        assertEquals("division by zero", exception.getMessage());
     }
 
 

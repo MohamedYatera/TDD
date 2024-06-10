@@ -17,7 +17,9 @@ public class Calculator {
 
     public double divide(double a, double b) {
         // Returns the division of a over b
-        
+        if (b == 0) {
+            throw new ArithmeticException("division by zero");
+        }
         return a / b;
     }
 }

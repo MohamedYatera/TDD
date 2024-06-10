@@ -11,11 +11,12 @@ public class Calculator {
     }
 
     public int multiply(int a, int b) {
-       
+        // Returns the multiplication of a anb
         return a * b;
     }
 
     public double divide(double a, double b) {
+        // Returns the division of a over b
         
         return a / b;
     }

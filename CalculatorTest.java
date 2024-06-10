@@ -9,4 +9,11 @@ public class CalculatorTest {
         int result = calculator.add(10, 20);
         assertEquals(30, result);
     }
+
+    @Test
+    public void testSubtract() {
+        Calculator calculator = new Calculator();
+        int result = calculator.subtract(20, 10);
+        assertEquals(10, result);
+    }
 }

@@ -11,7 +11,13 @@ public class Calculator {
     }
 
     public int multiply(int a, int b) {
-        // Returns the subtraction of b from a
+       
         return a * b;
     }
+
+    public double divide(double a, double b) {
+        
+        return a / b;
+    }
 }
+

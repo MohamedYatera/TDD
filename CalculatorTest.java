@@ -22,6 +22,14 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
     int result = calculator.multiply(10, 20);
     assertEquals(200, result);
-}
+    }
+
+    @Test
+    public void testDivide() {
+    Calculator calculator = new Calculator();
+    double result = calculator.divide(20.0, 10.0);
+    assertEquals(2.0, result, 0.001); // Tolerance for floating-point comparison
+    }
+
 
 }

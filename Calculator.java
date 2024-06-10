@@ -9,4 +9,9 @@ public class Calculator {
         // Returns the subtraction of b from a
         return a - b;
     }
+
+    public int multiply(int a, int b) {
+        // Returns the subtraction of b from a
+        return a * b;
+    }
 }
